@@ -1,4 +1,4 @@
-# Predictive-Model-for-Corporate-Controversy-Financial-Volatility
+# Corporate Controversy & Volatility Predictor (NLP)
 **Corporate Controversy & Volatility Predictor (NLP)**
 
 Quantifying the "Reputation Risk Premium" in Public Equities
