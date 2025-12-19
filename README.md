@@ -1,4 +1,48 @@
 # Predictive-Model-for-Corporate-Controversy-Financial-Volatility
-Using a longitudinal case study approach on Tesla , from Q2 2016 to Q2 2025, this research adopts a positivist philosophy and en embedded mixed-method design, sourcing data from Bloomberg and Yahoo Finance. The study leverages machine learning model (Random Forest Regression and Classification) to predict idiosyncratic volatility and controversy, with SHapley Additive exPlanations (SHAP) values used for interpretation of models. The use of SHAP values for interpretation moves the analysis from merely predicting to explanation.
-The analysis showed 3 important findings; first, the predictive power of Governance and social score on idiosyncratic risk and controversy, and the irrelevance of Environment score on the same. It also showed the negative causal relationship between the ESG component scores and risk. The research also found out the moderating effect of market volatility on risk prediction. 
-This study provides a dynamic framework for ESG- risk analysis, linking stakeholder’s theory with big data analytics, to offer practical and replicable method of analyzing ESG data, advocating for regime dependent approach for ESG integration, using disaggregated ESG scores
+**Corporate Controversy & Volatility Predictor (NLP)**
+
+Quantifying the "Reputation Risk Premium" in Public Equities
+Project Type: MBA Dissertation / Quantitative Research
+Domain: Sustainable Investing (ESG), Financial Risk Modeling, NLP
+Tech Stack: Python, NLTK/SpaCy, Pandas, Statsmodels (Regression)
+
+**Executive Summary**
+
+Standard financial risk models (like GARCH or standard deviation) rely heavily on historical price action. They often fail to capture "Tail Risk" events caused by non-financial triggers—specifically, corporate scandals and controversies.
+This project investigates the link between Firm-Specific Controversy (news sentiment) and Future Stock Volatility. By applying Natural Language Processing (NLP) to alternative data sources, I engineered a predictive model to determine if "Bad News" is a leading indicator of "Market Turbulence."
+
+**The Business Problem**
+
+**The Blind Spot:** Investors often treat ESG (Environmental, Social, Governance) as a moral metric rather than a risk metric.
+
+**The Hypothesis:** Companies with high "Controversy Scores" (negative sentiment spikes) will exhibit higher future volatility than their peers, even if their financials appear stable.
+
+**The Goal:** Build a "Forward-Looking" risk assessment tool that identifies hidden volatility signals before they hit the price.
+
+
+**Methodology**
+
+**Data Engineering & NLPData Sources:** Ingested alternative data covering corporate news, press releases, and controversy reports.
+
+**Sentiment Analysis:** Utilized NLP techniques to quantify "Controversy Intensity."Tokenization & Filtering: Isolated keywords related to fraud, litigation, environmental spills, and governance failures.
+
+**Scoring:** Assigned a quantitative "Controversy Score" to each firm for specific time windows.
+
+**Statistical Modeling**
+**Target Variable:** Realized Volatility (Standard Deviation of Daily Returns).
+
+**Predictors:** Historical Volatility (Control) + Controversy Score (Test Variable).
+
+**Regression Analysis:** Performed OLS Regression to test statistical significance.
+
+**Equation:** $Volatility_{t+1} = \alpha + \beta_1(Volatility_t) + \beta_2(ControversyScore_t) + \epsilon$
+
+**Key Findings**
+
+The Signal exists: The inclusion of Controversy Metrics improved the predictive accuracy of volatility forecasts compared to using financial data alone.
+Asymmetric Impact: "Governance" controversies (fraud/executive misconduct) had a stronger correlation with immediate price volatility than "Environmental" controversies.
+Investment Implication: Portfolios that filter out high-controversy firms do not just improve "Ethics"—they actively reduce Downside Risk Exposure.
+
+**Author**
+
+Oluwagbenga Gabriel Adediran MBA, Financial Technology & Data Analytics (2025)
